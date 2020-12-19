@@ -24,6 +24,16 @@ class TualoThemeRoute implements IRoute{
                 TualoApplication::etagFile( dirname(dirname(__DIR__)).'/theme-material/'.$matches['file'] , true);
             }
         },array('get'),false);
+
+        Route::add('/theme-neptune/(?P<file>[\/.\w\d\-\_\?]+)',function($matches){
+            if (file_exists( dirname(dirname(__DIR__)).'/theme-neptune/'.$matches['file'])){
+                /*
+                readfile( dirname(dirname(__DIR__)).'/theme-material/'.$matches['file'] );
+                exit();
+                */
+                TualoApplication::etagFile( dirname(dirname(__DIR__)).'/theme-neptune/'.$matches['file'] , true);
+            }
+        },array('get'),false);
         
     }
 }
