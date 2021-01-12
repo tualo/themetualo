@@ -1,8 +1,8 @@
 <?php
 
-namespace tualo\Office\TualoTheme\Middleware;
-use tualo\Office\Basic\TualoApplication;
-use tualo\Office\Basic\IMiddleware;
+namespace Tualo\Office\TualoTheme\Middlewares;
+use Tualo\Office\Basic\TualoApplication;
+use Tualo\Office\Basic\IMiddleware;
 
 class TualoThemeMiddleware implements IMiddleware{
     public static function register(){
